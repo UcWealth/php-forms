@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>PHP FORM</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <h3>Contact Me</h3>
+
+        <form action="processForm.php" method="POST" name="contact-form">
+       
+		<p>
+			<label for="name">Name</label><br />
+			<input type="text" name="name" required placeholder="Enter Your Full Name" />
+		</p>
+
+		<p>
+			<label for="email">Email</label><br />
+			<input type="email" name="email" placeholder="Enter Your Email" required />
+		</p>
+
+		<p>
+			<label for="message">Your Message</label><br />
+			<textarea name="message" required></textarea>
+		</p>
+    
+        <p>
+            <label for="department">Department</label><br />
+
+             <select name="department">
+                <option>Select Your Department</option>
+                <option>HR</option>
+                <option>Marketing</option>
+                <option>Board </option>
+                <option>Kitchen</option>
+              </select>
+        </p>
+
+        <p>
+            <label for="gender">Gender</label>
+            <input type="radio" name="gender">Female
+            <input type="radio" name="gender">Male
+            
+        </p>
+
+        <p>
+            <input type="checkbox" name="terms" required />By Checking this box you agree to our terms and conditions
+        </p>
+
+        <!-- <p>
+            <input type="submit" name="submit" value="Send Message">
+        </p> -->
+
+         <button type="submit" name="submit">Send Message</button>
+
+         <!-- <input type="button" value="Submit" id="btnsubmit" onclick="submitForm()"> -->
+
+</form>
+
+    <!-- <script>
+        function submitForm(){
+            var form = document.getElementsByName('contact-form')[0];
+            form.submit(); // Submit the form
+            form.reset();  // Reset all form data
+            return false; // Prevent page refresh
+        }
+    </script> -->
+    </body></html>
